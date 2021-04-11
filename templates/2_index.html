@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hello!</title>
+</head>
+<body>
+    <p>Hello, {{ x }}!</p>
+    {% for i in range(3) %}
+        {% if i == 0 %}
+            <p>{{ mylist[0] }}</p>
+        {% elif i == 1 %}
+            <p>{{ mylist[1] }}</p>
+        {% else %}
+            <p>{{ mylist[2] }}</p>
+        {% endif %}
+    {% endfor %}
+</body>
+</html>
